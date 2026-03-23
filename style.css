@@ -211,6 +211,7 @@ footer {
 .nav-links {
   display: flex;
   gap: 24px;
+  margin-left: 40px;
 }
 
 .nav-links a {
