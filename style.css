@@ -201,6 +201,7 @@ footer {
   font-weight: 700;
   color: var(--text);
   text-decoration: none;
+  margin-right: 40px;
 }
 
 .legal-nav .logo span {
