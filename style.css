@@ -28,44 +28,43 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 64px;
-  gap: 80px;
+  padding: 80px 80px;
+  gap: 100px;
   max-width: 1200px;
   margin: 0 auto;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 80px);
 }
 
 .hero-content {
   flex: 1;
-  max-width: 520px;
+  max-width: 540px;
 }
 
 .hero-content h1 {
-  font-size: 64px;
+  font-size: 76px;
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -1.5px;
-  margin-bottom: 24px;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  margin-bottom: 28px;
   color: var(--text);
 }
 
 .hero-content h1 span {
   color: var(--primary);
-  /* text shadow for legibility on white */
-  text-shadow: 0 0 40px rgba(214, 255, 96, 0.3);
 }
 
 .subtitle {
-  font-size: 20px;
+  font-size: 21px;
   color: var(--text-secondary);
   line-height: 1.5;
-  margin-bottom: 40px;
-  max-width: 400px;
+  margin-bottom: 44px;
+  max-width: 380px;
 }
 
 .app-store-badge img {
-  height: 54px;
+  height: 52px;
   transition: transform 0.2s;
+  border-radius: 0;
 }
 
 .app-store-badge:hover img {
@@ -76,27 +75,29 @@ body {
 .hero-phone {
   position: relative;
   flex-shrink: 0;
+  width: 320px;
+  height: 540px;
 }
 
 .phone-bg {
   position: absolute;
-  top: -40px;
-  right: -40px;
-  width: 360px;
-  height: 520px;
+  top: -24px;
+  right: -24px;
+  width: 300px;
+  height: 540px;
   background-color: var(--primary);
-  border-radius: 32px;
+  border-radius: 24px;
 }
 
 .phone-frame {
   position: relative;
-  width: 280px;
-  height: 580px;
+  width: 260px;
+  height: 540px;
   background: var(--app-bg);
-  border-radius: 40px;
+  border-radius: 36px;
   overflow: hidden;
-  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.15);
-  border: 8px solid #1a1a1a;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.12);
+  border: 6px solid #2a2a2a;
 }
 
 .phone-screenshot {
@@ -107,7 +108,7 @@ body {
 
 /* Footer */
 footer {
-  padding: 32px 24px;
+  padding: 28px 24px;
   text-align: center;
   color: var(--text-secondary);
   font-size: 13px;
@@ -115,7 +116,7 @@ footer {
 }
 
 .footer-links {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,7 +152,8 @@ footer {
   }
 
   .hero-content h1 {
-    font-size: 44px;
+    font-size: 48px;
+    letter-spacing: -1px;
   }
 
   .subtitle {
@@ -161,20 +163,21 @@ footer {
   }
 
   .hero-phone {
-    display: flex;
-    justify-content: center;
+    width: 280px;
+    height: 480px;
+    margin: 0 auto;
   }
 
   .phone-bg {
-    right: -20px;
-    top: -20px;
-    width: 300px;
-    height: 460px;
+    width: 260px;
+    height: 480px;
+    right: -16px;
+    top: -16px;
   }
 
   .phone-frame {
     width: 240px;
-    height: 500px;
+    height: 480px;
   }
 }
 
@@ -185,25 +188,30 @@ footer {
   }
 
   .hero-content h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
 
   .subtitle {
     font-size: 17px;
   }
 
+  .hero-phone {
+    width: 250px;
+    height: 440px;
+  }
+
   .phone-bg {
-    width: 260px;
-    height: 400px;
+    width: 230px;
+    height: 440px;
   }
 
   .phone-frame {
     width: 220px;
-    height: 460px;
+    height: 440px;
   }
 }
 
-/* Legal Pages — keep existing styles */
+/* Legal Pages */
 .legal {
   padding: 60px 24px;
   max-width: 700px;
