@@ -72,34 +72,25 @@ body {
   transform: translateY(-2px);
 }
 
-/* Phone mockup — right side */
+/* Phone mockup — right side, no background block */
 .hero-phone {
   position: relative;
   flex-shrink: 0;
-  width: 480px;
-  height: 600px;
+  margin-right: 80px;
 }
 
 .phone-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 400px;
-  height: 600px;
-  background-color: var(--primary);
-  border-radius: 24px 0 0 24px;
+  display: none;
 }
 
 .phone-frame {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  width: 260px;
-  height: 540px;
+  position: relative;
+  width: 280px;
+  height: 570px;
   background: var(--app-bg);
-  border-radius: 36px;
+  border-radius: 40px;
   overflow: hidden;
-  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
   border: 6px solid #2a2a2a;
 }
 
@@ -166,21 +157,12 @@ footer {
   }
 
   .hero-phone {
-    width: 280px;
-    height: 480px;
-    margin: 0 auto;
-  }
-
-  .phone-bg {
-    width: 260px;
-    height: 480px;
-    right: -16px;
-    top: -16px;
+    margin-right: 0;
   }
 
   .phone-frame {
     width: 240px;
-    height: 480px;
+    height: 490px;
   }
 }
 
@@ -198,20 +180,46 @@ footer {
     font-size: 17px;
   }
 
-  .hero-phone {
-    width: 250px;
-    height: 440px;
-  }
-
-  .phone-bg {
-    width: 230px;
-    height: 440px;
-  }
-
   .phone-frame {
     width: 220px;
-    height: 440px;
+    height: 450px;
   }
+}
+
+/* Legal nav */
+.legal-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-nav .logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.legal-nav .logo span {
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: var(--text);
 }
 
 /* Legal Pages */
@@ -236,7 +244,7 @@ footer {
   font-size: 24px;
   margin-top: 40px;
   margin-bottom: 16px;
-  color: var(--primary);
+  color: var(--text);
 }
 
 .legal p, .legal ul {
